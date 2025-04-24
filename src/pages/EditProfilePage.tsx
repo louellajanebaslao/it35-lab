@@ -1,3 +1,4 @@
+
 import React, { useState, useRef, useEffect } from 'react';
 import {
   IonContent, IonPage, IonInput, IonButton, IonAlert, IonHeader,
@@ -175,7 +176,7 @@ const EditProfile: React.FC = () => {
         <IonContent className="ion-padding">
           <IonItem>
             <IonText color="secondary">
-              <h1>Edit Profile</h1>
+              <h1>Edit Account</h1>
             </IonText>
           </IonItem>
           <br />
