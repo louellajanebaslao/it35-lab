@@ -1,0 +1,151 @@
+/* FeedContainer.css */
+
+/* Starry night background with dark gradient */
+.feed-content {
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #2c3e50) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 2rem;
+    min-height: 100vh;
+    font-family: 'Lora', serif;
+    overflow-y: auto;
+    backdrop-filter: blur(8px);
+  }
+  
+  /* Writing post state with soft moonlit glow */
+  .feed-content.writing-post {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: #f1f1f1 !important;
+  }
+  
+  /* Glass effect container with starry glow */
+  .glass-container {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 1.5rem;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Glowing text with starlit effect */
+  ion-card-title,
+  ion-card-subtitle,
+  ion-text,
+  ion-label,
+  h1,
+  p {
+    color: #f1f1f1 !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.5);
+    transition: color 0.3s ease;
+  }
+  
+  /* Animated starlit glow effect for post titles */
+  ion-card-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    animation: starlitGlow 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes starlitGlow {
+    0% {
+      color: #ff6f91;
+      text-shadow: 0 0 20px #ff6f91, 0 0 40px #ff6f91, 0 0 60px #ff6f91;
+    }
+    50% {
+      color: #8e44ad;
+      text-shadow: 0 0 20px #8e44ad, 0 0 40px #8e44ad, 0 0 60px #8e44ad;
+    }
+    100% {
+      color: #ffcc00;
+      text-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00, 0 0 60px #ffcc00;
+    }
+  }
+  
+  /* Hover effect on cards with moonlit light */
+  ion-card {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  ion-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Avatar with glowing moon border */
+  ion-avatar img {
+    border: 3px solid #f5a623;
+    animation: glowingMoon 3s infinite ease-in-out alternate;
+    border-radius: 50%;
+  }
+  
+  @keyframes glowingMoon {
+    0% {
+      box-shadow: 0 0 5px #f5a623, 0 0 10px #f5a623, 0 0 15px #f5a623;
+    }
+    50% {
+      box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+    }
+    100% {
+      box-shadow: 0 0 5px #f5a623, 0 0 10px #f5a623, 0 0 15px #f5a623;
+    }
+  }
+  
+  /* Soft, glowing buttons with star-like radiance */
+  ion-button {
+    background: #8e44ad;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  ion-button:hover {
+    background: #f1c40f;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Soft input fields with gentle glow */
+  ion-input.writing-post, ion-textarea.writing-post {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+    border: 1px solid #8e44ad;
+    border-radius: 10px;
+    padding: 1rem;
+    font-family: 'Lora', serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  ion-input.writing-post:focus, ion-textarea.writing-post:focus {
+    outline: none;
+    border-color: #ff6f91;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  }
+  
+  /* Modal and alerts with starlit theme */
+  ion-modal {
+    --background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+  }
+  
+  ion-alert {
+    --background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 1px solid #8e44ad;
+  }
+  
+  /* Fade-in animation for soft glow effect */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  ion-card, ion-input, ion-button {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
