@@ -140,7 +140,7 @@ const Register: React.FC = () => {
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4eYWUYMxURMfMo8D1gnNiYd3wXkYf0ycLQ&s"
                                         alt="User Avatar"
                                         style={{ width: '100%', height: '100%', borderRadius: '50%' }}
-                                    />
+                                    />  
                                 </div>
 
                                 <IonCardTitle>User Registration Details</IonCardTitle>

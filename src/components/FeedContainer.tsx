@@ -3,6 +3,7 @@ import { IonApp, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton
 import { User } from '@supabase/supabase-js';
 import { supabase } from '../utils/supabaseClient';
 import { colorFill, pencil, trash } from 'ionicons/icons';
+import './FeedContainer.css'; 
 
 interface Post {
   post_id: string;
@@ -126,7 +127,8 @@ const FeedContainer = () => {
                 />
               </IonCardContent>
               <div style={{ display: 'flex', justifyContent: 'flex-end', padding: '0.5rem' }}>
-                <IonButton onClick={createPost}>Post</IonButton>
+              <IonButton color="violet" onClick={createPost}>Post</IonButton>
+
               </div>
             </IonCard>
   
